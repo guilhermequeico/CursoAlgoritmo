@@ -7,19 +7,19 @@ inicio
       Escreva("Informe a segunda nota: ")
       Leia(nota2)
       media <- (nota1 + nota2) / 2
-      Se (media >= 0.0) e (media <= 4.9) entao
+      Se (media >= 0) e (media < 5) entao
          EscrevaL
-         EscrevaL(media)
-         EscrevaL("REPROVADO!")
+         EscrevaL("Média: ",media)
+         EscrevaL("Status: REPROVADO!")
       Senao
-           Se (media >= 5.0) e (media <= 6.9) entao
+           Se (media >= 5) e (media < 7) entao
               EscrevaL
-              EscrevaL(media)
-              EscrevaL("RECUPERAÇÃO!")
+              EscrevaL("Média: ",media)
+              EscrevaL("Status: RECUPERAÇÃO!")
            Senao
                 EscrevaL
-                EscrevaL(media)
-                EscrevaL("APROVADO!")
+                EscrevaL("Média: ",media)
+                EscrevaL("Status: APROVADO!")
            FimSe
       FimSe
 fimalgoritmo
