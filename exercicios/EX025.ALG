@@ -1,14 +1,14 @@
 algoritmo "EX025"
 var
-   lado1, lado2, lado3: Real
+   ladoA, ladoB, ladoC: Real
 inicio
-      Escreva("Informe o tamanho do lado 1: ")
-      Leia(lado1)
-      Escreva("Informe o tamanho do lado 2: ")
-      Leia(lado2)
-      Escreva("Informe o tamanho do lado 3: ")
-      Leia(lado3)
-      Se (lado1 < lado2 + lado3) e (lado2 < lado1 + lado3) e (lado3 < lado1 + lado2) entao
+      Escreva("Informe o tamanho do lado A: ")
+      Leia(ladoA)
+      Escreva("Informe o tamanho do lado B: ")
+      Leia(ladoB)
+      Escreva("Informe o tamanho do lado C: ")
+      Leia(ladoC)
+      Se (ladoA < ladoB + ladoC) e (ladoB < ladoA + ladoC) e (ladoC < ladoA + ladoB) entao
          EscrevaL
          EscrevaL("Com esses comprimentos é possível formar um triângulo.")
       Senao
