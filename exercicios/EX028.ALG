@@ -8,7 +8,7 @@ inicio
       Leia(comprimento)
       area <- (largura * comprimento)
       EscrevaL
-      EscrevaL("Área do terreno:",area:,"m²")
+      EscrevaL("Área do terreno:",area,"m²")
       Se (area < 100) entao
          EscrevaL("Classificação: Terreno Popular")
       Senao
