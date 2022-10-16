@@ -9,17 +9,22 @@ inicio
       EscrevaL("[2] Tesoura")
       EscrevaL("[5] Papel")
       EscrevaL()
-      Escreva("Player1 informe a sua escolha: ")
+      Escreva("JOGADOR1 informe a sua escolha: ")
       Leia(opcao)
       player1 <- opcao
-      EscrevaL(player1)
-      Escreva("Player2 informe a sua escolha: ")
+      Escreva("JOGADOR2 informe a sua escolha: ")
       Leia(opcao)
       Player2 <- opcao
-      EscrevaL(player2)
-      Se (player1 < player2) ou (player1 < player2) ou (player1 > player2) entao
-         EscrevaL("Player1 venceu!")
+      Se (player1 = 0) e (player2 = 2) ou (player1 = 2) e (player2 = 5) ou (player1 = 5) e (player2 = 0) entao
+         EscrevaL()
+         EscrevaL("JOGADOR1 venceu!")
       Senao
-           EscrevaL("Player2 venceu!")
+           Se (player1 = player2) entao
+              EscrevaL()
+              EscrevaL("Empatou!")
+           Senao
+                EscrevaL()
+                EscrevaL("JOGADOR2 venceu!")
+           FimSe
       FimSe
 fimalgoritmo
