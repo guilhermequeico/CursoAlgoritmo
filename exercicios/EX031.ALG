@@ -1,22 +1,30 @@
 algoritmo "EX031"
 var
-   opcao, player1, player2: Inteiro
+   opcao, jogador1, jogador2: Inteiro
 inicio
    EscrevaL("Bem-vindo ao JoKenPo")
    EscrevaL()
-   EscrevaL("Escolha uma das opções: ")
+   EscrevaL("Escolha: ")
    EscrevaL("[0] Pedra")
    EscrevaL("[2] Tesoura")
    EscrevaL("[5] Papel")
    EscrevaL()
-   Escreva("JOGADOR1 informe a sua escolha: ")
+   Escreva("[JOGADOR 1] Informe a sua escolha: ")
    Leia(opcao)
-
-   enquanto opcao <> 0 faca
-      EscrevaL("Opção inválida!")
+   jogador1 <- opcao
+   Escreva("[JOGADOR 2] Informe a sua escolha: ")
+   Leia(opcao)
+   jogador2 <- opcao
+   Se(jogador1 = jogador2) entao
       EscrevaL()
-      EscrevaL("JOGADOR1 informe a sua escolha: ")
-      Leia(opcao)
-   Fimenquanto
-   player1 <- opcao
+      EscrevaL("Jogo Empatado!")
+   Senao
+      Se(jogador1 = 0) e (jogador2 = 2) ou (jogador1 = 2) e (jogador2 = 5) ou (jogador1 = 5) e (jogador2 = 0) entao
+         EscrevaL()
+         EscrevaL("[JOGADOR 1] Venceu!")
+      Senao
+         EscrevaL()
+         EscrevaL("[JOGADOR 2] Venceu!")
+      FimSe
+   FimSe
 fimalgoritmo
