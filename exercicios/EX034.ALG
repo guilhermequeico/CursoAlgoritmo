@@ -15,24 +15,26 @@ inicio
       EscrevaL("Seu IMC é ",imc:2:1)
       EscrevaL("Você está: Abaixo do peso")
    Senao
-      Se(imc >= 18.5) e (imc <= 24.9) entao
+      Se(imc >= 18.5) e (imc < 25) entao
          EscrevaL()
          EscrevaL("Seu IMC é ",imc:2:1)
          EscrevaL("Você está: Com peso ideal")
       Senao
-         Se(imc >= 25) e (imc <= 29.9) entao
+         Se(imc >= 25) e (imc < 29.9) entao
             EscrevaL()
             EscrevaL("Seu IMC é ",imc:2:1)
             EscrevaL("Você está: Com sobrepeso")
          Senao
-            Se(imc >= 30) e (imc <= 39.9) entao
+            Se(imc > 29.9) e (imc < 40) entao
                EscrevaL()
                EscrevaL("Seu IMC é ",imc:2:1)
                EscrevaL("Você está: Com obesidade")
             Senão
-               EscrevaL()
-               EscrevaL("Seu IMC é ",imc:2:1)
-               EscrevaL("Você está: Com obesidade mórbida")
+               Se(imc > 40) entao
+                  EscrevaL()
+                  EscrevaL("Seu IMC é ",imc:2:1)
+                  EscrevaL("Você está: Com obesidade mórbida")
+               FimSe
             FimSe
          FimSe
       FimSe
