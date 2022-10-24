@@ -38,7 +38,7 @@ inicio
       Escreva("Quantidade de KM percorridos: ")
       Leia(kmPercorridos)
       precoTotalDiarias <- (diasAlocados * 150)
-      S\ze(kmPercorridos <= 200) entao
+      Se(kmPercorridos <= 200) entao
          precoTotalKm <- (kmPercorridos * 0.3)
       Senao
          precoTotalKm <- (kmPercorridos * 0.25)
