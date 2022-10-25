@@ -56,6 +56,7 @@ inicio
       EscrevaL("Reajuste: R$",reajuste:5:2)
       EscrevaL("Novo salário: R$",novoSalario:5:2)
    OutroCaso
-      EscrevaL("Informe uma opção válida!")
+      EscrevaL()
+      EscrevaL("[ERRO] - Opção inválida!")
    FimEscolha
 fimalgoritmo
