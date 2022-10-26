@@ -1,6 +1,6 @@
 algoritmo "EX045"
 var
-   numInicial, numFinal, incremento, contador: Inteiro
+   numInicial, numFinal, incremento: Inteiro
 inicio
    Escreva("Digite o primeiro valor: ")
    Leia(numInicial)
@@ -10,16 +10,15 @@ inicio
    Leia(incremento)
    EscrevaL()
    Escreva("Contagem:")
-   contador <- numInicial
-   Se(contador <= numFinal)entao
-      Enquanto (contador <= numFinal) faca
-         Escreva(contador)
-         contador <- contador + incremento
+   Se(numInicial <= numFinal)entao
+      Enquanto (numInicial <= numFinal) faca
+         Escreva(numInicial)
+         numInicial <- numInicial + incremento
       FimEnquanto
    Senao
-      Enquanto (contador >= numFinal) faca
-         Escreva(contador)
-         contador <- contador - incremento
+      Enquanto (numInicial >= numFinal) faca
+         Escreva(numInicial)
+         numInicial <- numInicial - incremento
       FimEnquanto
    FimSe
    Escreva(" Acabou!")
