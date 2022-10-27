@@ -1,6 +1,6 @@
 algoritmo "EX046"
 var
-   contador, soma, vezes: Inteiro
+   contador, soma: Inteiro
 inicio
    contador <- 6
    Enquanto (contador <= 100)faca
