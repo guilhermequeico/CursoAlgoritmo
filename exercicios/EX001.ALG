@@ -2,5 +2,5 @@ algoritmo "EX001"
 var
 
 inicio
-      Escreva("Olá, Mundo!")
+   EscrevaL("Olá, Mundo!")
 fimalgoritmo
