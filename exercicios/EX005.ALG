@@ -1,11 +1,11 @@
 algoritmo "EX005"
 var
-   grade1, grade2, average: Real
+   nota1, nota2, media: Real
 inicio
-      Escreva("Digite a primeira nota: ")
-      Leia(grade1)
-      Escreva("Digite a segunda nota: ")
-      Leia(grade2)
-      average <- (grade1 + grade2) / 2
-      Escreval("A média entre",grade1," e",grade2," é igual a",average,".")
+   Escreva("Digite a primeira nota: ")
+   Leia(nota1)
+   Escreva("Digite a segunda nota: ")
+   Leia(nota2)
+   media <- (nota1 + nota2) / 2
+   EscrevaL("A média entre",nota1," e",nota2," é igual a",media)
 fimalgoritmo
