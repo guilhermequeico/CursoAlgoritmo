@@ -1,11 +1,11 @@
 algoritmo "EX007"
 var
-   num, double, thirdPart: Real
+   num, dobro, terco: Real
 inicio
-      Escreva("Digite um número: ")
-      Leia(num)
-      double <- (num * 2)
-      thirdPart <- (num / 3)
-      Escreval("O dobro de",num," é",double)
-      Escreval("A terça parte de",num," é",thirdPart)
+   Escreva("Digite um número: ")
+   Leia(num)
+   dobro <- (num * 2)
+   terco <- (num / 3)
+   EscrevaL("O dobro de",num," é",dobro)
+   EscrevaL("A terça parte de",num," é",terco)
 fimalgoritmo
