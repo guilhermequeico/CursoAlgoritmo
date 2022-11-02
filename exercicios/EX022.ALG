@@ -1,19 +1,24 @@
 algoritmo "EX022"
 var
-   ano, idade, tempoFalta, tempoPassou: Inteiro
+   anoNasc, anoAtual, idade, tempoFalta, tempoPassou: Inteiro
 inicio
-      Escreva("Informe o ano de nascimento: ")
-      Leia(ano)
-      idade <- (2022 - ano)
-      Se (idade = 18) entao
-         EscrevaL("Você está na idade de se alistar.")
+   Escreva("Informe o ano de nascimento: ")
+   Leia(anoNasc)
+   Escreva("Informe o ano atual: ")
+   Leia(anoAtual)
+   idade <- (anoAtual - anoNasc)
+   Se(idade = 18)entao
+      EscrevaL()
+      EscrevaL("Você está na idade de se alistar.")
+   Senao
+      Se(idade < 18)entao
+         tempoFalta <- (18 - idade)
+         EscrevaL()
+         EscrevaL("Ainda faltam",tempoFalta," anos para o alistamento militar.")
       Senao
-           Se (idade < 18) entao
-              tempoFalta <- (18 - idade)
-              EscrevaL("Ainda faltam",tempoFalta," anos para o alistamento militar.")
-           Senao
-                tempoPassou <- (idade - 18)
-                EscrevaL("Já se passaram",tempoPassou," anos para o alistamento militar.")
-           FimSe
+         tempoPassou <- (idade - 18)
+         EscrevaL
+         EscrevaL("Já se passaram",tempoPassou," anos para o alistamento militar.")
       FimSe
+   FimSe
 fimalgoritmo
