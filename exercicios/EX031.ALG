@@ -15,11 +15,11 @@ inicio
    Escreva("[JOGADOR 2] Informe a sua escolha: ")
    Leia(opcao)
    jogador2 <- opcao
-   Se(jogador1 = jogador2) entao
+   Se(jogador1 = jogador2)entao
       EscrevaL()
       EscrevaL("Jogo Empatado!")
    Senao
-      Se(jogador1 = 0) e (jogador2 = 2) ou (jogador1 = 2) e (jogador2 = 5) ou (jogador1 = 5) e (jogador2 = 0) entao
+      Se(jogador1 = 0) e (jogador2 = 2) ou (jogador1 = 2) e (jogador2 = 5) ou (jogador1 = 5) e (jogador2 = 0)entao
          EscrevaL()
          EscrevaL("[JOGADOR 1] Venceu!")
       Senao
