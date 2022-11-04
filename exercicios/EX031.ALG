@@ -2,18 +2,31 @@ algoritmo "EX031"
 var
    opcao, jogador1, jogador2: Inteiro
 inicio
-   EscrevaL("Bem-vindo ao JoKenPo")
-   EscrevaL()
-   EscrevaL("Escolha: ")
-   EscrevaL("[0] Pedra")
-   EscrevaL("[2] Tesoura")
-   EscrevaL("[5] Papel")
-   EscrevaL()
-   Escreva("[JOGADOR 1] Informe a sua escolha: ")
-   Leia(opcao)
+   Repita
+      EscrevaL("Bem-vindo ao JoKenPo")
+      EscrevaL()
+      EscrevaL("Escolha: ")
+      EscrevaL("[0] Pedra")
+      EscrevaL("[2] Tesoura")
+      EscrevaL("[5] Papel")
+      EscrevaL()
+      Escreva("[JOGADOR 1] Informe a sua escolha: ")
+      Leia(opcao)
+      LimpaTela
+   Ate(opcao = 0) ou (opcao = 2) ou (opcao = 5)
    jogador1 <- opcao
-   Escreva("[JOGADOR 2] Informe a sua escolha: ")
-   Leia(opcao)
+   Repita
+      EscrevaL("Bem-vindo ao JoKenPo")
+      EscrevaL()
+      EscrevaL("Escolha: ")
+      EscrevaL("[0] Pedra")
+      EscrevaL("[2] Tesoura")
+      EscrevaL("[5] Papel")
+      EscrevaL()
+      Escreva("[JOGADOR 2] Informe a sua escolha: ")
+      Leia(opcao)
+      LimpaTela
+   Ate(opcao = 0) ou (opcao = 2) ou (opcao = 5)
    jogador2 <- opcao
    Se(jogador1 = jogador2)entao
       EscrevaL()
