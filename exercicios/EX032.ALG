@@ -2,7 +2,10 @@ algoritmo "EX032"
 var
    numSorteado, resposta: Inteiro
 inicio
-   numSorteado <- 2
+   Aleatorio 1, 5
+   Leia(numSorteado)
+   Aleatorio Off
+   LimpaTela
    EscrevaL("Tente descobrir qual foi o número sorteado entre 1 e 5.")
    Escreva("Resposta: ")
    Leia(resposta)
@@ -12,5 +15,6 @@ inicio
    Senao
       EscrevaL()
       EscrevaL("Errou!")
+      EscrevaL("O número sorteado foi:",numSorteado)
    FimSe
 fimalgoritmo
