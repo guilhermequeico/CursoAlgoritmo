@@ -25,11 +25,6 @@ inicio
          precoTotalKm <- (kmPercorridos * 0.1)
       FimSe
       totalAlocacao <- (precoTotalDiarias + precoTotalKm)
-      EscrevaL()
-      EscrevaL("Resumo da alocação")
-      EscrevaL("Diária: R$",precoTotalDiarias:5:2)
-      EscrevaL("KMs: R$",precoTotalKm:5:2)
-      EscrevaL("Total: R$",totalAlocacao:5:2)
    Caso 2
       EscrevaL()
       EscrevaL("Categoria selecionada: Luxo")
@@ -44,13 +39,13 @@ inicio
          precoTotalKm <- (kmPercorridos * 0.25)
       FimSe
       totalAlocacao <- (precoTotalDiarias + precoTotalKm)
-      EscrevaL()
-      EscrevaL("Resumo da alocação")
-      EscrevaL("Diária: R$",precoTotalDiarias:5:2)
-      EscrevaL("KMs: R$",precoTotalKm:5:2)
-      EscrevaL("Total: R$",totalAlocacao:5:2)
    OutroCaso
       EscrevaL()
       EscrevaL("[ERRO] Opção digitada é inválida!")
    FimEscolha
+   EscrevaL()
+   EscrevaL("Resumo da alocação")
+   EscrevaL("Diária: R$",precoTotalDiarias:5:2)
+   EscrevaL("KMs: R$",precoTotalKm:5:2)
+   EscrevaL("Total: R$",totalAlocacao:5:2)
 fimalgoritmo
