@@ -10,7 +10,7 @@ inicio
    Leia(incremento)
    EscrevaL()
    Escreva("Contagem:")
-   Se(numInicial <= numFinal)entao
+   Se(numInicial <= numFinal) entao
       Enquanto (numInicial <= numFinal) faca
          Escreva(numInicial)
          numInicial <- numInicial + incremento
