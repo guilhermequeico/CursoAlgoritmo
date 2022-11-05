@@ -30,11 +30,9 @@ inicio
                EscrevaL("Seu IMC é ",imc:2:1)
                EscrevaL("Você está: Com obesidade")
             Senão
-               Se(imc > 40) entao
-                  EscrevaL()
-                  EscrevaL("Seu IMC é ",imc:2:1)
-                  EscrevaL("Você está: Com obesidade mórbida")
-               FimSe
+               EscrevaL()
+               EscrevaL("Seu IMC é ",imc:2:1)
+               EscrevaL("Você está: Com obesidade mórbida")
             FimSe
          FimSe
       FimSe
