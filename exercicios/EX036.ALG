@@ -5,7 +5,7 @@ inicio
    EscrevaL("Quantas horas de atividade física você praticou esse mês?")
    Escreva("Horas: ")
    Leia(horasAtividade)
-   Se(horasAtividade <= 10)entao
+   Se(horasAtividade <= 10) entao
       totalPontos <- (horasAtividade * 2)
    Senao
       Se(horasAtividade > 10) e (horasAtividade <= 20)entao
@@ -17,5 +17,5 @@ inicio
    bonus <- (totalPontos * 5) / 100
    EscrevaL
    EscrevaL("Neste mês você obteve: ",totalPontos," pontos.")
-   EscrevaL("Você ganhou um bonus de: R$",bonus)
+   EscrevaL("Você ganhou um bonus de: R$",bonus:2:2)
 fimalgoritmo
