@@ -4,7 +4,7 @@ var
 inicio
    contador <- 30
    Enquanto (contador >= 1) faca
-      Se(contador %4 = 0) entao
+      Se(contador % 4 = 0) entao
          Escreva(" [",contador," ]")
       Senao
          Escreva(contador)
