@@ -3,7 +3,7 @@ var
    contador, numero, soma: Inteiro
 inicio
    contador <- 1
-   Enquanto (contador <= 7)faca
+   Enquanto (contador <= 7) faca
       Escreva("Informe um número: ")
       Leia(numero)
       soma <- soma + numero
