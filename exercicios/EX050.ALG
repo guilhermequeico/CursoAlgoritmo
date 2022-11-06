@@ -3,14 +3,14 @@ var
    contador, numero, maior, divisivel: Inteiro
 inicio
    contador <- 0
-   Enquanto (contador < 20)faca
+   Enquanto (contador < 20) faca
       Aleatorio 0, 10
       Leia(numero)
       Aleatorio Off
-      Se(numero > 5)entao
+      Se(numero > 5) entao
          maior <- maior + 1
       FimSe
-      Se(numero % 3 = 0)entao
+      Se(numero % 3 = 0) entao
          divisivel <- divisivel + 1
       FimSe
       contador <- contador + 1
