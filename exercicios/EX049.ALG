@@ -3,10 +3,10 @@ var
    contador, numero, par, impar: Inteiro
 inicio
    contador <- 1
-   Enquanto (contador <= 6)faca
+   Enquanto (contador <= 6) faca
       Escreva("Informe um número inteiro: ")
       Leia(numero)
-      Se(numero % 2 = 0)entao
+      Se(numero % 2 = 0) entao
          par <- par + 1
       Senao
          impar <- impar + 1
