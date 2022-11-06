@@ -1,19 +1,25 @@
 algoritmo "EX051"
 var
    contador: Inteiro
-   preco, maior, menor: Real
+   precoInicial, preco, maior, menor: Real
 inicio
+   Escreva("Digite o valor do produto: R$")
+   Leia(precoInicial)
+   maior <- precoInicial
+   menor <- precoInicial
    contador <- 1
-   maior <- 0
-   menor <- 0
-   Enquanto (contador <= 4)faca
+   Enquanto (contador <= 7) faca
       Escreva("Digite o valor do produto: R$")
       Leia(preco)
-      Se(preco > maior)entao
+      Se(preco < menor) entao
+         menor <- preco
+      FimSe
+      Se(preco > maior) entao
          maior <- preco
       FimSe
       contador <- contador + 1
    FimEnquanto
-   EscrevaL(maior)
-   EscrevaL(menor)
+   EscrevaL()
+   EscrevaL("Maior preço digitado foi:",maior)
+   EscrevaL("Menor preço digitado foi:",menor)
 fimalgoritmo
