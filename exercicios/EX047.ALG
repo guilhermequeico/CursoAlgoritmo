@@ -3,9 +3,9 @@ var
    contador, soma: Inteiro
 inicio
    contador <- 500
-   Enquanto (contador >= 0)faca
+   Enquanto (contador >= 0) faca
       Escreva(contador)
-      Se(contador > 0)entao
+      Se(contador > 0) entao
          Escreva(" +")
       Senao
          Escreva(" =")
