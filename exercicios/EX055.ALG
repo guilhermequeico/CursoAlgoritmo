@@ -6,7 +6,8 @@ inicio
    Leia(numSorteado)
    Aleatorio Off
    LimpaTela
-   EscrevaL("Tente descobrir qual foi o número sorteado entre 1 e 10.")
+   EscrevaL("Descubra o número sorteado entre 1 e 10")
+   EscrevaL()
    Escreva("Resposta: ")
    Leia(resposta)
    Se(resposta = numSorteado) entao
@@ -14,14 +15,10 @@ inicio
       EscrevaL("Parabéns! Você acertou o número.")
    Senao
       EscrevaL()
+      EscrevaL("Errou!")
       EscrevaL("Você possui mais 3 tentativas")
       contador <- 2
       Enquanto (contador < 5) faca
-         Se(contador = 5) entao
-            EscrevaL()
-            EscrevaL("Que chato! Você não acertou o número sorteado.")
-            EscrevaL("O número sorteado foi:",numSorteado)
-         FimSe
          EscrevaL()
          EscrevaL(contador,"ª tentativa")
          Escreva(" Resposta: ")
@@ -29,9 +26,14 @@ inicio
          Se(resposta = numSorteado) entao
             EscrevaL()
             EscrevaL("Parabéns! Você acertou o número.")
-            contador <- 5
+            contador <- 10
          Senao
             contador <- contador + 1
+         FimSe
+         Se(contador = 5) entao
+            EscrevaL()
+            EscrevaL("Que chato! Você não acertou.")
+            EscrevaL("O número sorteado foi:",numSorteado)
          FimSe
       FimEnquanto
    FimSe
