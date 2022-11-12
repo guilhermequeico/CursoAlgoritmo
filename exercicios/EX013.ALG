@@ -1,10 +1,12 @@
 algoritmo "EX013"
 var
-   salario, salarioAtualizado: Real
+   salario, aumento, salarioAtualizado: Real
 inicio
    Escreva("Salário atual do funcionário: R$")
    Leia(salario)
-   salarioAtualizado <-  salario + ((salario * 15) / 100)
+   aumento <- (salario * 15) / 100)
+   salarioAtualizado <- salario + aumento
    EscrevaL
-   EscrevaL("Salário atualizado com 15% de aumento: R$",salarioAtualizado:5:2)
+   EscrevaL("15% de aumento: R$",aumento)
+   EscrevaL("Salário atualizado: R$",salarioAtualizado:5:2)
 fimalgoritmo
