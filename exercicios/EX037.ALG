@@ -6,7 +6,7 @@ var
 inicio
    EscrevaL("Reajuste Salarial")
    EscrevaL()
-   Escreva("Salário atual do funcionário: R$")
+   Escreva("Salário atual do funcionário(a): R$")
    Leia(salario)
    EscrevaL()
    EscrevaL("Qual é o gênero do funcionário(a)?")
