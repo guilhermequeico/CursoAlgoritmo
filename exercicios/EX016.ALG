@@ -3,9 +3,12 @@ var
    qtdCigarros, qtdAnos, totalCigarros, totalMinutos: Inteiro
    tempoVida: Real
 inicio
-   Escreva("Quantos cigarros você fuma por dia? ")
+   EscrevaL("Quantos cigarros você fuma por dia? ")
+   Escreva("Resposta: ")
    Leia(qtdCigarros)
-   Escreva("Há quanto tempo você fuma? ")
+   EscrevaL()
+   EscrevaL("Há quanto tempo/ano você fuma? ")
+   Escreva("Resposta: ")
    Leia(qtdAnos)
    totalCigarros <- (qtdCigarros * (qtdAnos * 365))
    totalMinutos <- (totalCigarros * 10)
