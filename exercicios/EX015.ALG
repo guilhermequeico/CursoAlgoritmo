@@ -1,11 +1,11 @@
 algoritmo "EX015"
 var
    salario: Real
-   qtdDias: Inteiro
+   qtdDiasTrab: Inteiro
 inicio
    Escreva("Informe a quantidade de dias trabalhados: ")
-   Leia(qtdDias)
-   salario <- (8 * 25) * qtdDias
+   Leia(qtdDiasTrab)
+   salario <- (8 * 25) * qtdDiasTrab
    EscrevaL
    EscrevaL("Salário: R$",salario:5:2)
 fimalgoritmo
