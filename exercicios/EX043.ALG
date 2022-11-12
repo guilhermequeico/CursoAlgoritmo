@@ -3,7 +3,7 @@ var
    contador: Inteiro
 inicio
    contador <- 30
-   Enquanto (contador >= 1) faca
+   Enquanto (contador > 0) faca
       Se(contador % 4 = 0) entao
          Escreva(" [",contador," ]")
       Senao
