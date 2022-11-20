@@ -21,4 +21,3 @@ inicio
    Escreva(" ) =",soma)
    EscrevaL
 fimalgoritmo
-
