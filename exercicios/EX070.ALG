@@ -4,8 +4,7 @@ var
 inicio
    num1 <- 1
    num2 <- 1
-   EscrevaL("Sequência de Fibonacci")
-   EscrevaL
+   Escreva("Sequência de Fibonacci:")
    Escreva(num1)
    Escreva(num2)
    Para contador <- 3 ate 10 faca
@@ -14,4 +13,5 @@ inicio
       num1 <- num2
       num2 <- fibonacci
    FimPara
+   EscrevaL
 fimalgoritmo
