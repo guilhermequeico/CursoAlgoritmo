@@ -2,11 +2,15 @@ algoritmo "EX088"
 var
    msg: Caracter
    qtdMsg: Inteiro
-Procedimento Gerador(msg: Caracter)
+Procedimento Gerador(msg: Caracter; qtdMsg: Inteiro)
+var
+   contador: Inteiro
 Inicio
    LimpaTela
    EscrevaL("+----------=====----------+")
-   EscrevaL("    ",msg)
+   Para contador <- 1 ate qtdMsg faca
+      EscrevaL("    ",msg)
+   FimPara
    EscrevaL("+----------=====----------+")
 FimProcedimento
 inicio
@@ -14,5 +18,5 @@ inicio
    Leia(msg)
    Escreva("Informe quantas vezes deseja repetir a mensagem: ")
    Leia(qtdMsg)
-   Gerador(msg)
+   Gerador(msg, qtdMsg)
 fimalgoritmo
