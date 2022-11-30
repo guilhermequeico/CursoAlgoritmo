@@ -20,7 +20,7 @@ Inicio
    EscrevaL
 FimProcedimento
 inicio
-   EscrevaL("Seguência de Fibonnacci")
+   EscrevaL("Sequência de Fibonnacci")
    EscrevaL
    Escreva("Nª de termos: ")
    Leia(qtdTermos)
