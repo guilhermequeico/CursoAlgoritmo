@@ -6,7 +6,7 @@ inicio
    Para i <- 0 ate 9 faca
       valor <- valor + 5
       n[i] <- valor
-      Escreva("[",i," ]")
+      Escreva(i," |")
       EscrevaL(n[i])
    FimPara
 fimalgoritmo
