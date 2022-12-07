@@ -5,7 +5,7 @@ var
 inicio
    Para i <- 0 ate 7 faca
       n[i] <- 999
-      Escreva("[",i," ]")
+      Escreva(i," |")
       EscrevaL(n[i])
    FimPara
 fimalgoritmo
