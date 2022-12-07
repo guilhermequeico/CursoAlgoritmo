@@ -8,7 +8,7 @@ inicio
    FimPara
 
    Para i <- 0 ate 7 faca
-      Escreva(i)
+      Escreva("[",i," ]")
       EscrevaL(n[i])
    FimPara
 fimalgoritmo
