@@ -5,9 +5,6 @@ var
 inicio
    Para i <- 0 ate 7 faca
       n[i] <- 999
-   FimPara
-
-   Para i <- 0 ate 7 faca
       Escreva("[",i," ]")
       EscrevaL(n[i])
    FimPara
