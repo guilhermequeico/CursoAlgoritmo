@@ -3,11 +3,11 @@ var
    n: Vetor[1..7] de Inteiro
    i: Inteiro
 inicio
+   Aleatorio On
    Para i <- 1 ate 7 faca
-      Aleatorio 1, 99
       Leia(n[i])
-      Aleatorio Off
    FimPara
+   Aleatorio Off
    LimpaTela
    Para i <- 1 ate 7 faca
       Escreva(i,"º número gerado: ")
