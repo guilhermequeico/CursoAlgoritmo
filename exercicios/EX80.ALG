@@ -12,6 +12,7 @@ inicio
    EscrevaL("Escolha uma chave entre 1 - 15")
    Escreva("Chave: ")
    Leia(chave)
+   LimpaTela
    Para i <- 1 ate 30 faca
       Se(chave = n[i]) entao
          EscrevaL
